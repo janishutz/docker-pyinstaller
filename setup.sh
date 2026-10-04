@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pacman -Sy xorg-server-xvfb wine wget zip --noconfirm
+pacman -Sy xorg-server-xvfb wine wget zip python-pip --noconfirm
 
 # ── Wine config ─────────────────────────────────────────────────────
 # From https://github.com/webcomics/pywine/blob/main/wine-init.sh
