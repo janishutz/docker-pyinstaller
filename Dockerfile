@@ -1,9 +1,8 @@
 FROM archlinux
 
 COPY ./setup.sh /build/setup.sh
-RUN chmod +x /build/build.sh
-RUN chmod +x /build/prepare.sh
+RUN chmod +x /build/setup.sh
 
-RUN /build/prepare.sh
+RUN /build/setup.sh
 
-ENTRYPOINT ["/build/build.sh"]
+ENTRYPOINT ["bash"]
