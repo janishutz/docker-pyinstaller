@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
       - name: Build docker image
-        run: docker buildx build ./main --tag ghcr.io/janishutz/docker-pyinstaller
+        run: docker buildx build . --tag ghcr.io/janishutz/docker-pyinstaller
       - name: Publish the container to GitHub Container Registry
         run: |
           docker push ghcr.io/janishutz/docker-pyinstaller
