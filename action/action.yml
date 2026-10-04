@@ -1,0 +1,16 @@
+name: Build for Windows & Linux
+description: Build for Windows and Linux
+author: Janis Hutz
+inputs:
+  out:
+    description: "The output directory"
+    default: ""
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.out }}
+branding:
+  icon: book
+  color: red
