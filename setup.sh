@@ -34,5 +34,6 @@ DISPLAY=:0.0 wine cmd /c 'python-3.14.4-amd64.exe /quiet TargetDir=C:\\Python In
 rm python-3.14.4-amd64.exe
 
 pip install --break-system-packages pyinstaller
+wine C:/Python/python.exe -m PyInstaller
 
 pacman -Rs xorg-server-xvfb --noconfirm
