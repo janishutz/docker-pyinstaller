@@ -8,6 +8,7 @@ else
 		outdir=$1
 	fi
 fi
+export HOME=/root
 
 wine C:/Python/python.exe -m PyInstaller -F main.py
 python -m PyInstaller -F main.py
